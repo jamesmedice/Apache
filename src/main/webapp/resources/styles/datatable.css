@@ -1,0 +1,36 @@
+table.dataview {
+	margin-bottom: 20px;
+	border-bottom: 2px solid #eee;
+	font-size: 1em;
+	font-family: arial;
+	width: 100%;
+}
+	
+table.dataview caption { text-align: left; }
+table.dataview tr { padding-top: 20px; padding-bottom: 10px; }
+table.dataview tr.even { margin-bottom: 20px; padding-bottom: 10px;border-top: 1px solid #eee;background-color: #fffff; }
+table.dataview tr.odd { padding-bottom: 10px; border-top: 1px solid #eee;background-color: #fffff; }
+table.dataview tr td { padding-left: 8px; padding-right: 30px; }
+table.dataview tr th { color: black; padding-top: 3px; padding-bottom: 5px;
+padding-left: 8px; padding-right: 30px; background-color: #ffffff;
+border-bottom: 2px solid #eee; border-top: 2px solid #eee; text-align:
+left; white-space: nowrap; vertical-align: middle;}
+
+table.dataview tr th { background-position: right;
+background-repeat:no-repeat; }
+table.dataview tr th.wicket_orderDown {color:black;
+	background-color: #ffffff; background-image:
+url(displaytag/img/arrow_down.png); }
+table.dataview tr th.wicket_orderUp {color:black;
+	background-color: #ffffff; background-image:
+url(displaytag/img/arrow_up.png); }
+table.dataview tr th.wicket_orderNone {
+	background-image: url(displaytag/img/arrow_off.png);
+}
+table.dataview tr th a { padding-bottom: 10px;font-weight: normal; }
+table.dataview #message { padding-left: 3px; }
+table.dataview caption { padding-bottom: 2px; }
+table.dataview td{padding-top: 10px; padding-bottom: 5px;
+padding-left: 8px; padding-right: 30px; background-color: #ffffff;
+	border-top: 1px solid #eee; text-align:
+left; white-space: nowrap; vertical-align: middle;}

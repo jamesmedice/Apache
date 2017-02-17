@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wicket:panel xmlns:wicket="http://wicket.apache.org">
+<div ng-controller="DashboardController">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Dashboard</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="fa fa-user fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge"></div>
+						<div>Client</div>
+					</div>
+				</div>
+			</div>
+			<a wicket:id="clientLink">
+				<div class="panel-footer">
+					<span class="pull-left">Show all Results</span> <span
+						class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-green">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="fa fa-tasks fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge"><span wicket:id="cntAG"></span></div>
+						<div>Offers</div>
+					</div>
+				</div>
+			</div>
+			<a wicket:id="offerLink">
+				<div class="panel-footer">
+					<span class="pull-left">Show All Results</span> <span
+						class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-yellow">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="fa fa-envelope fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge"><span wicket:id="cntRE"></span></div>
+						<div>Invoices overdue</div>
+					</div>
+				</div>
+			</div>
+			<a wicket:id="billLink">
+				<div class="panel-footer">
+					<span class="pull-left">Show all Results</span> <span
+						class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-red">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="fa fa-cubes fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge"><span wicket:id="cntAM"></span></div>
+						<div>Allowances</div>
+					</div>
+				</div>
+			</div>
+			<a wicket:id="allowanceLink">
+				<div class="panel-footer">
+					<span class="pull-left">Show all Results</span> <span
+						class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+</wicket:panel>

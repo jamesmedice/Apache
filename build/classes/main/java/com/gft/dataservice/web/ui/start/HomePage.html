@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+
+<meta charset="utf-8" />
+<title>Wicket Portal</title>
+<link rel="stylesheet"
+	href="resources/styles/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet"
+	href="resources/styles/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet"
+	href="resources/styles/jquery-ui/themes/base/jquery-ui.css" />
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" href="resources/styles/main.css">
+<link rel="stylesheet" href="resources/styles/sb-admin-2.css">
+<link rel="stylesheet" href="resources/styles/timeline.css">
+<link rel="stylesheet" href="resources/styles/autocomplete.css">
+<link rel="stylesheet" href="resources/styles/tooltip.css">
+<link rel="stylesheet" href="resources/styles/datatable.css">
+<style type="text/css">
+div.wicket-aa {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
+	font-size: 14px;
+	background-color: white;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
+	padding: 2px;
+	margin: 1px 0 0 0;
+	text-align: left;
+}
+
+div.wicket-aa ul {
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+}
+
+div.wicket-aa ul li.selected {
+	background-color: #E0E0E0;
+	padding: 2px;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<nav class="navbar navbar-default navbar-static-top navi">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse">
+					<span class="sr-only">Navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>Tiago Medice</span> <span
+					class="navbar-version">1.0</span></a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-top-links navbar-right">
+					<li><a href=""> <span class="glyphicon glyphicon-home"></span>
+							<span translate="global.menu.home">Home</span>
+					</a></li>
+				</ul>
+			</div>
+			<div class="navbar-default sidebar" role="navigation">
+				<div class="sidebar-nav navbar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="sidebar-search">
+							<div class="input-group custom-search-form">
+								<input type="text" class="form-control" ng-model="searchString"
+									placeholder="Search..." /> <span class="input-group-btn">
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div>
+						</li>
+						<li><a wicket:id="dashboardLink"><i
+								class="fa fa-dashboard fa-fw"></i>Dashboard</a></li>
+						<li><a wicket:id="clientLink"><i 
+								class="fa fa-user fa-fw"></i>Client</a></li>
+						<li><a wicket:id="offerLink"><i
+								class="fa fa-tasks fa-fw"></i>Deals</a></li>
+						<li><a wicket:id="statementLink"><i
+								class="fa fa-envelope fa-fw"></i>Invoices</a></li>
+						<li><a wicket:id="allowanceLink"><i
+								class="fa fa-credit-card fa-fw"></i>Payments</a></li>
+						<li><a wicket:id=paymentLink><i
+								class="fa fa-cubes fa-fw"></i>OverSize</a></li>
+						<li><a wicket:id="creditLink"><i
+								class="fa fa-reply fa-fw"></i>Credits</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="page-wrapper">
+			<div wicket:id="pageContent"></div>
+		</div>
+	</div>
+	
+	
+	<div wicket:id="modalWindowPlaceHolder"></div>
+	 
+</body>
+</html>
